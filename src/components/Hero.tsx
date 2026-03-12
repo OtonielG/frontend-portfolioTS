@@ -134,7 +134,7 @@ export default function Hero() {
       </article>
 
       <article
-        className="w-full lg:w-1/2 flex justify-center items-center animate-on-mount"
+        className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center items-center animate-on-mount"
         style={{ animationDelay: "0.7s" }}
       >
         <img
