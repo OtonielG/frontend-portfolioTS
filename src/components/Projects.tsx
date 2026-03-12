@@ -25,16 +25,16 @@ const projects: Project[] = [
       "Context API",
       "useReducer",
     ],
-    githubUrl: "https://github.com/yourusername/minesweeper",
-    liveUrl: "https://your-minesweeper-demo.com",
+    githubUrl: "https://github.com/OtonielG/minesweeperTS",
+    liveUrl: "https://minesweeper-ts-topaz.vercel.app/",
   },
   {
     title: "Portfolio Website",
     screenshot: portfolioShot,
     screenshotAlt: "Portfolio website interface showing main sections",
     technologies: ["React", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com/yourusername/portfolio",
-    liveUrl: "https://your-portfolio-demo.com",
+    githubUrl: "https://github.com/OtonielG/frontend-portfolioTS",
+    liveUrl: "https://frontend-portfolio-ts.vercel.app/",
   },
 ];
 
