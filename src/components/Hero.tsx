@@ -2,7 +2,7 @@ import heroImg from "../assets/hero-png.png";
 import githubSVG from "../assets/github-svg.svg";
 import gmailSVG from "../assets/gmail-svg.svg";
 import linkedinSVG from "../assets/linkedin-svg.svg";
-import CV from "../assets/Untitled document.pdf";
+import CV from "../assets/Otoniel_Gomez_Frontend_Developer_CV.pdf";
 import { DownloadIcon, Mail } from "lucide-react";
 
 interface SocialIcon {
