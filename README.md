@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# 🧑‍💻 Otoniel Gómez — Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with **React**, **TypeScript**, and **Tailwind CSS**, showcasing my skills, projects, and contact information.
 
-Currently, two official plugins are available:
+🔗 **Live site:** [frontend-portfolio-ts.vercel.app](https://frontend-portfolio-ts.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📸 Preview
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+![Portfolio Preview](src/assets/projects/Portfolio.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Responsive design** — adapted for mobile, tablet, and desktop
+- **Smooth scroll navigation** — fixed navbar with anchor links
+- **Animated sections** — elements animate on mount for a polished experience
+- **CV download** — direct PDF download button
+- **Contact section** — direct links to email, GitHub, and LinkedIn
+- **Accessible markup** — semantic HTML and accessible structure
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
+
+| Technology    | Use                          |
+|---------------|------------------------------|
+| React         | UI component library         |
+| TypeScript    | Type-safe JavaScript         |
+| Tailwind CSS  | Utility-first styling        |
+| Vite          | Build tool and dev server    |
+| Lucide React  | Icon library                 |
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/          # Images, SVGs, CV PDF, skill icons
+├── components/
+│   ├── Navbar.tsx   # Fixed top navigation with mobile menu
+│   ├── Hero.tsx     # Landing section with CTA buttons
+│   ├── About.tsx    # Bio and highlight cards
+│   ├── Skills.tsx   # Technologies grid
+│   ├── Projects.tsx # Featured project cards
+│   └── Contact.tsx  # Contact info and email CTA
+└── App.tsx          # Root component
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js `>= 18`
+- npm or yarn
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/OtonielG/frontend-portfolioTS.git
+
+# Navigate into the project
+cd frontend-portfolioTS
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
 ```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 📬 Contact
+
+- **Email:** otonielgomez993@gmail.com
+- **LinkedIn:** [linkedin.com/in/otoniel-gomez-03gt](https://www.linkedin.com/in/otoniel-gomez-03gt/)
+- **GitHub:** [github.com/OtonielG](https://github.com/OtonielG)
