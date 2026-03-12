@@ -9,7 +9,12 @@ import tailwindIcon from "../assets/skills/tailwind-svgrepo-com.svg";
 import tsIcon from "../assets/skills/typescript-svgrepo-com.svg";
 import vscodeIcon from "../assets/skills/visual-studio-code-svgrepo-com.svg";
 
-const skills = [
+interface Skill {
+  name: string;
+  icon: string;
+}
+
+const skills: Skill[] = [
   { name: "React", icon: reactIcon },
   { name: "TypeScript", icon: tsIcon },
   { name: "JavaScript", icon: jsIcon },

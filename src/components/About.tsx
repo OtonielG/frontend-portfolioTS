@@ -1,6 +1,12 @@
-import { Code2, Lightbulb, Rocket } from "lucide-react";
+import { Code2, Lightbulb, Rocket, type LucideIcon } from "lucide-react";
 
-const highlights = [
+interface Highlight {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+const highlights: Highlight[] = [
   {
     icon: Code2,
     title: "Modern Frontend Stack",
