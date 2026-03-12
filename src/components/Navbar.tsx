@@ -56,7 +56,7 @@ export default function Navbar() {
         <div className="flex gap-5">
           <a
             href="#contact"
-            className="hidden md:flex bg-linear-to-br from-orange-500 to-amber-500 text-white py-2 px-6 rounded-full hover:scale-110 transition-transform duration-300"
+            className="hidden md:flex bg-linear-to-br from-orange-500 to-amber-500 text-white font-bold py-2 px-6 rounded-full hover:scale-110 transition-transform duration-300"
           >
             <span>Get In Touch</span>
           </a>
