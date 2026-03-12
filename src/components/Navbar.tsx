@@ -77,22 +77,25 @@ export default function Navbar() {
           >
             <ul className="flex flex-col gap-2 p-4">
               {navItems.map((item) => (
-                <li
-                  key={item.link}
-                  className="group hover:bg-gray-700 flex justify-center items-center py-3 text-white rounded-lg cursor-pointer"
-                >
-                  <a href={item.link} onClick={() => setIsOpen(false)}>
+                <li key={item.link}>
+                  <a
+                    href={item.link}
+                    onClick={() => setIsOpen(false)}
+                    className="group flex w-full items-center justify-center rounded-lg py-3 text-white transition-colors hover:bg-gray-700"
+                  >
                     <span className="inline-block transition-transform duration-200 group-hover:translate-x-2 group-hover:text-orange-400">
                       {item.name}
                     </span>
                   </a>
                 </li>
               ))}
-              <li
-                className="group flex justify-center items-center md:hidden py-4 w-full bg-linear-to-br from-orange-500 to-amber-500 text-white 
-                rounded-lg cursor-pointer"
-              >
-                <a href="#contact" onClick={() => setIsOpen(false)}>
+
+              <li className="md:hidden">
+                <a
+                  href="#contact"
+                  onClick={() => setIsOpen(false)}
+                  className="group flex w-full items-center justify-center rounded-lg bg-linear-to-br from-orange-500 to-amber-500 py-4 text-white"
+                >
                   <span className="transition-transform duration-200 group-hover:scale-125 group-hover:font-bold">
                     Get In Touch
                   </span>
