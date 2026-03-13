@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 interface NavItem {
@@ -31,9 +32,12 @@ export default function Navbar() {
 
   return (
     <header className="w-full h-16 fixed flex justify-center top-4 z-50">
-      <nav
+      <motion.nav
         ref={navRef}
         className="relative bg-linear-to-br from-gray-700 to-black flex justify-between items-center px-8 w-[90%] md:w-3/4 h-full rounded-full"
+        initial={{ opacity: 0, y: -60, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <a
           href="#home"
@@ -41,6 +45,7 @@ export default function Navbar() {
         >
           Portfolio
         </a>
+
         <ul className="hidden lg:flex gap-6">
           {navItems.map((item) => (
             <li
@@ -53,6 +58,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
+
         <div className="flex gap-5">
           <a
             href="#contact"
@@ -60,6 +66,7 @@ export default function Navbar() {
           >
             <span>Get In Touch</span>
           </a>
+
           <button
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
@@ -70,6 +77,7 @@ export default function Navbar() {
             {isOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
+
         {isOpen && (
           <section
             id="mobile-menu"
@@ -104,7 +112,7 @@ export default function Navbar() {
             </ul>
           </section>
         )}
-      </nav>
+      </motion.nav>
     </header>
   );
 }

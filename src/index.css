@@ -3,19 +3,3 @@
 html {
   scroll-behavior: smooth;
 }
-
-@keyframes fadeUpOnMount {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-on-mount {
-  opacity: 0;
-  animation: fadeUpOnMount 0.7s ease-out forwards;
-}

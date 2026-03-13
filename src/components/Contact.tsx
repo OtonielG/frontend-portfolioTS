@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   ArrowUpRight,
   Github,
@@ -52,43 +53,53 @@ export default function Contact() {
       <div className="absolute top-0 left-0 h-32 w-full pointer-events-none bg-linear-to-b from-black to-transparent" />
 
       <div className="flex w-full flex-col items-center">
-        <span
-          className="flex w-fit items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm text-orange-400 animate-on-mount"
-          style={{ animationDelay: "0.2s" }}
+        <motion.span
+          className="flex w-fit items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm text-orange-400"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
         >
           <span className="h-2 w-2 rounded-full bg-orange-500" />
           Let&apos;s Connect
-        </span>
+        </motion.span>
 
-        <h2
-          className="mt-4 text-center text-3xl font-bold text-white sm:text-4xl lg:text-5xl animate-on-mount"
-          style={{ animationDelay: "0.3s" }}
+        <motion.h2
+          className="mt-4 text-center text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           Contact{" "}
           <span className="bg-linear-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">
             Me
           </span>
-        </h2>
+        </motion.h2>
 
-        <p
-          className="mt-4 max-w-2xl text-center text-sm leading-relaxed text-gray-300 sm:text-base lg:text-lg animate-on-mount"
-          style={{ animationDelay: "0.4s" }}
+        <motion.p
+          className="mt-4 max-w-2xl text-center text-sm leading-relaxed text-gray-300 sm:text-base lg:text-lg"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
         >
           I&apos;m currently seeking a junior frontend developer role where I
           can apply my skills to real projects and contribute to building
           modern, responsive web applications.
-        </p>
+        </motion.p>
       </div>
 
       <div className="mt-12 grid w-full gap-8 lg:grid-cols-[1fr_1fr]">
-        <div
-          className="grid gap-4 sm:grid-cols-2 animate-on-mount"
-          style={{ animationDelay: "0.5s" }}
-        >
-          {contactItems.map((item) => (
-            <article
+        <div className="grid gap-4 sm:grid-cols-2">
+          {contactItems.map((item, index) => (
+            <motion.article
               key={item.label}
               className="rounded-xl border border-gray-700/50 bg-gray-800/50 p-5 backdrop-blur-sm"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
             >
               <div className="flex items-start gap-4">
                 <div className="shrink-0 rounded-lg bg-orange-500/10 p-2">
@@ -126,13 +137,16 @@ export default function Contact() {
                   )}
                 </div>
               </div>
-            </article>
+            </motion.article>
           ))}
         </div>
 
-        <article
-          className="flex rounded-xl border border-gray-700/50 bg-gray-800/50 p-6 backdrop-blur-sm animate-on-mount"
-          style={{ animationDelay: "0.6s" }}
+        <motion.article
+          className="flex rounded-xl border border-gray-700/50 bg-gray-800/50 p-6 backdrop-blur-sm"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.55, delay: 0.15 }}
         >
           <div className="flex h-full flex-col justify-between">
             <div>
@@ -157,7 +171,7 @@ export default function Contact() {
               </a>
             </div>
           </div>
-        </article>
+        </motion.article>
       </div>
     </section>
   );

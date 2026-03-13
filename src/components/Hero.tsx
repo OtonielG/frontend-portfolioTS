@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import heroImg from "../assets/hero-png.png";
 import githubSVG from "../assets/github-svg.svg";
 import gmailSVG from "../assets/gmail-svg.svg";
@@ -42,9 +43,12 @@ export default function Hero() {
       <div className="absolute top-0 left-0 w-full h-32 pointer-events-none bg-linear-to-b from-black to-transparent" />
 
       <article className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start gap-4">
-        <ul
-          className="flex gap-4 animate-on-mount"
-          style={{ animationDelay: "0.1s" }}
+        <motion.ul
+          className="flex gap-4"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5 }}
         >
           {socialIcons.map((social) => (
             <li
@@ -65,46 +69,61 @@ export default function Hero() {
               </a>
             </li>
           ))}
-        </ul>
+        </motion.ul>
 
-        <span
-          className="w-fit flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm text-orange-400 animate-on-mount"
-          style={{ animationDelay: "0.2s" }}
+        <motion.span
+          className="w-fit flex items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm text-orange-400"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <span className="h-2 w-2 rounded-full bg-orange-500" />
           Open to work
-        </span>
+        </motion.span>
 
-        <h1
-          className="title-font text-3xl font-bold text-white sm:text-4xl lg:text-5xl animate-on-mount"
-          style={{ animationDelay: "0.3s" }}
+        <motion.h1
+          className="title-font text-3xl font-bold text-white sm:text-4xl lg:text-5xl"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
         >
           Hi, I&apos;m{" "}
           <span className="bg-linear-to-r from-orange-500 to-amber-400 bg-clip-text text-transparent">
             Otoniel
           </span>
-        </h1>
+        </motion.h1>
 
-        <p
-          className="text-base font-medium text-orange-500 sm:text-lg animate-on-mount"
-          style={{ animationDelay: "0.4s" }}
+        <motion.p
+          className="text-base font-medium text-orange-500 sm:text-lg"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           Frontend Developer · React · TypeScript
-        </p>
+        </motion.p>
 
-        <p
-          className="max-w-md text-center text-sm leading-relaxed text-gray-300 sm:max-w-lg sm:text-base lg:text-start lg:text-lg sm:mb-8 animate-on-mount"
-          style={{ animationDelay: "0.5s" }}
+        <motion.p
+          className="max-w-md text-center text-sm leading-relaxed text-gray-300 sm:max-w-lg sm:text-base lg:text-start lg:text-lg sm:mb-8"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
         >
           Junior Frontend Developer focused on building responsive and
           accessible web applications with React and TypeScript. I enjoy
           creating clean, responsive interfaces and continuously improving my
           development skills.
-        </p>
+        </motion.p>
 
-        <div
-          className="flex w-full flex-col gap-3 md:w-auto md:flex-row md:gap-6 animate-on-mount"
-          style={{ animationDelay: "0.6s" }}
+        <motion.div
+          className="flex w-full flex-col gap-3 md:w-auto md:flex-row md:gap-6"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
         >
           <div className="w-full md:w-auto">
             <a
@@ -130,19 +149,22 @@ export default function Hero() {
               <span className="whitespace-nowrap">Contact Me</span>
             </a>
           </div>
-        </div>
+        </motion.div>
       </article>
 
-      <article
-        className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center items-center animate-on-mount"
-        style={{ animationDelay: "0.7s" }}
+      <motion.article
+        className="w-full lg:w-1/2 mb-10 lg:mb-0 flex justify-center items-center"
+        initial={{ opacity: 0, y: 24 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.2 }}
       >
         <img
           src={heroImg}
           alt="Illustration of Otoniel"
           className="w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:scale-105"
         />
-      </article>
+      </motion.article>
     </section>
   );
 }
