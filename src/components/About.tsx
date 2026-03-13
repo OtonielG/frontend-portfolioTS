@@ -34,8 +34,6 @@ export default function About() {
       id="about"
       className="relative flex min-h-dvh w-full flex-col justify-center overflow-hidden bg-linear-to-br from-gray-900 via-gray-900 to-gray-900 px-6 pt-28 pb-16 md:px-14 lg:px-40"
     >
-      <div className="absolute top-0 left-0 h-32 w-full pointer-events-none bg-linear-to-b from-black to-transparent" />
-
       <div className="flex w-full flex-col items-center">
         <motion.span
           className="flex w-fit items-center gap-2 rounded-full border border-orange-500/30 bg-orange-500/10 px-4 py-1 text-sm text-orange-400"

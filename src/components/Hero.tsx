@@ -40,8 +40,6 @@ export default function Hero() {
       className="relative flex flex-col gap-8 lg:flex-row justify-center items-center overflow-hidden 
       bg-linear-to-br from-gray-900 via-gray-900 to-gray-900 w-full min-h-dvh px-6 md:px-14 lg:px-40 pt-28 lg:pt-12"
     >
-      <div className="absolute top-0 left-0 w-full h-32 pointer-events-none bg-linear-to-b from-black to-transparent" />
-
       <article className="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start gap-4">
         <motion.ul
           className="flex gap-4"
