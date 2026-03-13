@@ -115,7 +115,10 @@ export default function Hero() {
           Junior Frontend Developer focused on building responsive and
           accessible web applications with React and TypeScript. I enjoy
           creating clean, responsive interfaces and continuously improving my
-          development skills.
+          development skills. Fluent in{" "}
+          <span className="font-semibold text-orange-400">Spanish</span>,{" "}
+          <span className="font-semibold text-orange-400">English</span>, and{" "}
+          <span className="font-semibold text-orange-400">Portuguese</span>.
         </motion.p>
 
         <motion.div
