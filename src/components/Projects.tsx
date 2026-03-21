@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 
-import minesweeperShot from "../assets/projects/Minesweeper.png";
-import portfolioShot from "../assets/projects/Portfolio.png";
+import minesweeperShot from "../assets/projects/Minesweeper.webp";
+import portfolioShot from "../assets/projects/Portfolio.webp";
+import pomodoroShot from "../assets/projects/Pomodoro.webp";
 
 interface Project {
   title: string;
@@ -15,7 +16,7 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Minesweeper Game",
+    title: "Interactive Game with Complex State Management – Minesweeper",
     screenshot: minesweeperShot,
     screenshotAlt:
       "Minesweeper game interface showing the board and dark visual style",
@@ -30,12 +31,27 @@ const projects: Project[] = [
     liveUrl: "https://minesweeper-ts-topaz.vercel.app/",
   },
   {
-    title: "Portfolio Website",
+    title: "Responsive Frontend Portfolio with Animations and Clean UI",
     screenshot: portfolioShot,
     screenshotAlt: "Portfolio website interface showing main sections",
     technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubUrl: "https://github.com/OtonielG/frontend-portfolioTS",
     liveUrl: "https://frontend-portfolio-ts.vercel.app/",
+  },
+  {
+    title: "Timer Application Focused on Frontend Testing",
+    screenshot: pomodoroShot,
+    screenshotAlt:
+      "Timer application interface showing focus mode, countdown timer, and controls with a clean dark UI",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "React Testing Library",
+      "Vitest",
+    ],
+    githubUrl: "https://github.com/OtonielG/pomodoro-app",
+    liveUrl: "https://pomodoro-app-ivory.vercel.app/",
   },
 ];
 

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroImg from "../assets/hero-png.png";
+import heroImg from "../assets/hero-picture.webp";
 import githubSVG from "../assets/github-svg.svg";
 import gmailSVG from "../assets/gmail-svg.svg";
 import linkedinSVG from "../assets/linkedin-svg.svg";
@@ -163,7 +163,7 @@ export default function Hero() {
         <img
           src={heroImg}
           alt="Illustration of Otoniel"
-          className="w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:scale-105"
+          className="w-full max-w-md lg:max-w-lg transition-transform duration-300 hover:scale-105 rounded-2xl"
         />
       </motion.article>
     </section>
