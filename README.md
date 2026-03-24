@@ -8,7 +8,7 @@ A personal portfolio website built with **React**, **TypeScript**, and **Tailwin
 
 ## 📸 Preview
 
-![Portfolio Preview](src/assets/projects/Portfolio.png)
+![Portfolio Preview](src/assets/projects/Portfolio.webp)
 
 ---
 
