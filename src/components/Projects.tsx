@@ -4,6 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import minesweeperShot from "../assets/projects/Minesweeper.webp";
 import portfolioShot from "../assets/projects/Portfolio.webp";
 import pomodoroShot from "../assets/projects/Pomodoro.webp";
+import taskManagerShot from "../assets/projects/Task-manager.webp";
 
 interface Project {
   title: string;
@@ -15,6 +16,21 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    title:
+      "Task Management Board with Drag-and-Drop Interaction and Persistent State",
+    screenshot: taskManagerShot,
+    screenshotAlt:
+      "Task manager board interface showing draggable columns, task organization, and a clean modern layout",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "dnd-kit (Drag and Drop)",
+    ],
+    githubUrl: "https://github.com/OtonielG/pomodoro-app",
+    liveUrl: "https://task-manager-dnd.vercel.app/",
+  },
   {
     title: "Interactive Game with Complex State Management – Minesweeper",
     screenshot: minesweeperShot,
@@ -31,14 +47,6 @@ const projects: Project[] = [
     liveUrl: "https://minesweeper-ts-topaz.vercel.app/",
   },
   {
-    title: "Responsive Frontend Portfolio with Animations and Clean UI",
-    screenshot: portfolioShot,
-    screenshotAlt: "Portfolio website interface showing main sections",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/OtonielG/frontend-portfolioTS",
-    liveUrl: "https://frontend-portfolio-ts.vercel.app/",
-  },
-  {
     title: "Timer Application Focused on Frontend Testing",
     screenshot: pomodoroShot,
     screenshotAlt:
@@ -52,6 +60,14 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/OtonielG/pomodoro-app",
     liveUrl: "https://pomodoro-app-ivory.vercel.app/",
+  },
+  {
+    title: "Responsive Frontend Portfolio with Animations and Clean UI",
+    screenshot: portfolioShot,
+    screenshotAlt: "Portfolio website interface showing main sections",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    githubUrl: "https://github.com/OtonielG/frontend-portfolioTS",
+    liveUrl: "https://frontend-portfolio-ts.vercel.app/",
   },
 ];
 
