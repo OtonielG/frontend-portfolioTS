@@ -28,7 +28,7 @@ const projects: Project[] = [
       "Tailwind CSS",
       "dnd-kit (Drag and Drop)",
     ],
-    githubUrl: "https://github.com/OtonielG/pomodoro-app",
+    githubUrl: "https://github.com/OtonielG/task-manager-dnd",
     liveUrl: "https://task-manager-dnd.vercel.app/",
   },
   {
@@ -60,14 +60,6 @@ const projects: Project[] = [
     ],
     githubUrl: "https://github.com/OtonielG/pomodoro-app",
     liveUrl: "https://pomodoro-app-ivory.vercel.app/",
-  },
-  {
-    title: "Responsive Frontend Portfolio with Animations and Clean UI",
-    screenshot: portfolioShot,
-    screenshotAlt: "Portfolio website interface showing main sections",
-    technologies: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubUrl: "https://github.com/OtonielG/frontend-portfolioTS",
-    liveUrl: "https://frontend-portfolio-ts.vercel.app/",
   },
   {
     title: "Responsive Frontend Portfolio with Animations and Clean UI",
